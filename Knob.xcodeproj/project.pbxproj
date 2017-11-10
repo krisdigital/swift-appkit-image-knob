@@ -13,6 +13,8 @@
 		8C6A5C081FB62A5D00C9052D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6A5C061FB62A5D00C9052D /* Main.storyboard */; };
 		8C6A5C131FB62A5D00C9052D /* KnobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C121FB62A5D00C9052D /* KnobTests.swift */; };
 		8C6A5C1E1FB62A5D00C9052D /* KnobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C1D1FB62A5D00C9052D /* KnobUITests.swift */; };
+		8C6A5C2C1FB62A9100C9052D /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C2B1FB62A9100C9052D /* Knob.swift */; };
+		8C6A5C301FB6463100C9052D /* fender_knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6A5C2F1FB6463100C9052D /* fender_knob.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		8C6A5C191FB62A5D00C9052D /* KnobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6A5C1D1FB62A5D00C9052D /* KnobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobUITests.swift; sourceTree = "<group>"; };
 		8C6A5C1F1FB62A5D00C9052D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6A5C2B1FB62A9100C9052D /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		8C6A5C2F1FB6463100C9052D /* fender_knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fender_knob.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,13 @@
 		8C6A5BFF1FB62A5D00C9052D /* Knob */ = {
 			isa = PBXGroup;
 			children = (
+				8C6A5C2F1FB6463100C9052D /* fender_knob.png */,
 				8C6A5C001FB62A5D00C9052D /* AppDelegate.swift */,
 				8C6A5C021FB62A5D00C9052D /* ViewController.swift */,
 				8C6A5C041FB62A5D00C9052D /* Assets.xcassets */,
 				8C6A5C061FB62A5D00C9052D /* Main.storyboard */,
 				8C6A5C091FB62A5D00C9052D /* Info.plist */,
+				8C6A5C2B1FB62A9100C9052D /* Knob.swift */,
 			);
 			path = Knob;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6A5C301FB6463100C9052D /* fender_knob.png in Resources */,
 				8C6A5C051FB62A5D00C9052D /* Assets.xcassets in Resources */,
 				8C6A5C081FB62A5D00C9052D /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6A5C031FB62A5D00C9052D /* ViewController.swift in Sources */,
+				8C6A5C2C1FB62A9100C9052D /* Knob.swift in Sources */,
 				8C6A5C011FB62A5D00C9052D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

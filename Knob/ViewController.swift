@@ -10,9 +10,11 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var knob: Knob!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        knob.knobImagePath = "fender_knob.png"
         // Do any additional setup after loading the view.
     }
 
@@ -23,5 +25,8 @@ class ViewController: NSViewController {
     }
 
 
+    @IBAction func didChange(_ sender: Knob) {
+        NSLog("%f", sender.value)
+    }
 }
 
