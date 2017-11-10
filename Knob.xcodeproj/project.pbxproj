@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6A5C011FB62A5D00C9052D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C001FB62A5D00C9052D /* AppDelegate.swift */; };
+		8C6A5C031FB62A5D00C9052D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C021FB62A5D00C9052D /* ViewController.swift */; };
+		8C6A5C051FB62A5D00C9052D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6A5C041FB62A5D00C9052D /* Assets.xcassets */; };
+		8C6A5C081FB62A5D00C9052D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6A5C061FB62A5D00C9052D /* Main.storyboard */; };
+		8C6A5C131FB62A5D00C9052D /* KnobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C121FB62A5D00C9052D /* KnobTests.swift */; };
+		8C6A5C1E1FB62A5D00C9052D /* KnobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A5C1D1FB62A5D00C9052D /* KnobUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C6A5C0F1FB62A5D00C9052D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C6A5BF51FB62A5D00C9052D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6A5BFC1FB62A5D00C9052D;
+			remoteInfo = Knob;
+		};
+		8C6A5C1A1FB62A5D00C9052D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C6A5BF51FB62A5D00C9052D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6A5BFC1FB62A5D00C9052D;
+			remoteInfo = Knob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C6A5BFD1FB62A5D00C9052D /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6A5C001FB62A5D00C9052D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C6A5C021FB62A5D00C9052D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C6A5C041FB62A5D00C9052D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C6A5C071FB62A5D00C9052D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C6A5C091FB62A5D00C9052D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6A5C0E1FB62A5D00C9052D /* KnobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6A5C121FB62A5D00C9052D /* KnobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobTests.swift; sourceTree = "<group>"; };
+		8C6A5C141FB62A5D00C9052D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6A5C191FB62A5D00C9052D /* KnobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6A5C1D1FB62A5D00C9052D /* KnobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobUITests.swift; sourceTree = "<group>"; };
+		8C6A5C1F1FB62A5D00C9052D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6A5BFA1FB62A5D00C9052D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6A5C0B1FB62A5D00C9052D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6A5C161FB62A5D00C9052D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C6A5BF41FB62A5D00C9052D = {
+			isa = PBXGroup;
+			children = (
+				8C6A5BFF1FB62A5D00C9052D /* Knob */,
+				8C6A5C111FB62A5D00C9052D /* KnobTests */,
+				8C6A5C1C1FB62A5D00C9052D /* KnobUITests */,
+				8C6A5BFE1FB62A5D00C9052D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C6A5BFE1FB62A5D00C9052D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C6A5BFD1FB62A5D00C9052D /* Knob.app */,
+				8C6A5C0E1FB62A5D00C9052D /* KnobTests.xctest */,
+				8C6A5C191FB62A5D00C9052D /* KnobUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C6A5BFF1FB62A5D00C9052D /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				8C6A5C001FB62A5D00C9052D /* AppDelegate.swift */,
+				8C6A5C021FB62A5D00C9052D /* ViewController.swift */,
+				8C6A5C041FB62A5D00C9052D /* Assets.xcassets */,
+				8C6A5C061FB62A5D00C9052D /* Main.storyboard */,
+				8C6A5C091FB62A5D00C9052D /* Info.plist */,
+			);
+			path = Knob;
+			sourceTree = "<group>";
+		};
+		8C6A5C111FB62A5D00C9052D /* KnobTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C6A5C121FB62A5D00C9052D /* KnobTests.swift */,
+				8C6A5C141FB62A5D00C9052D /* Info.plist */,
+			);
+			path = KnobTests;
+			sourceTree = "<group>";
+		};
+		8C6A5C1C1FB62A5D00C9052D /* KnobUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C6A5C1D1FB62A5D00C9052D /* KnobUITests.swift */,
+				8C6A5C1F1FB62A5D00C9052D /* Info.plist */,
+			);
+			path = KnobUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6A5BFC1FB62A5D00C9052D /* Knob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6A5C221FB62A5D00C9052D /* Build configuration list for PBXNativeTarget "Knob" */;
+			buildPhases = (
+				8C6A5BF91FB62A5D00C9052D /* Sources */,
+				8C6A5BFA1FB62A5D00C9052D /* Frameworks */,
+				8C6A5BFB1FB62A5D00C9052D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Knob;
+			productName = Knob;
+			productReference = 8C6A5BFD1FB62A5D00C9052D /* Knob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C6A5C0D1FB62A5D00C9052D /* KnobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6A5C251FB62A5D00C9052D /* Build configuration list for PBXNativeTarget "KnobTests" */;
+			buildPhases = (
+				8C6A5C0A1FB62A5D00C9052D /* Sources */,
+				8C6A5C0B1FB62A5D00C9052D /* Frameworks */,
+				8C6A5C0C1FB62A5D00C9052D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C6A5C101FB62A5D00C9052D /* PBXTargetDependency */,
+			);
+			name = KnobTests;
+			productName = KnobTests;
+			productReference = 8C6A5C0E1FB62A5D00C9052D /* KnobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C6A5C181FB62A5D00C9052D /* KnobUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6A5C281FB62A5D00C9052D /* Build configuration list for PBXNativeTarget "KnobUITests" */;
+			buildPhases = (
+				8C6A5C151FB62A5D00C9052D /* Sources */,
+				8C6A5C161FB62A5D00C9052D /* Frameworks */,
+				8C6A5C171FB62A5D00C9052D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C6A5C1B1FB62A5D00C9052D /* PBXTargetDependency */,
+			);
+			name = KnobUITests;
+			productName = KnobUITests;
+			productReference = 8C6A5C191FB62A5D00C9052D /* KnobUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C6A5BF51FB62A5D00C9052D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = krisdigital;
+				TargetAttributes = {
+					8C6A5BFC1FB62A5D00C9052D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4ALFCYUZ64;
+						ProvisioningStyle = Automatic;
+					};
+					8C6A5C0D1FB62A5D00C9052D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4ALFCYUZ64;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8C6A5BFC1FB62A5D00C9052D;
+					};
+					8C6A5C181FB62A5D00C9052D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4ALFCYUZ64;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8C6A5BFC1FB62A5D00C9052D;
+					};
+				};
+			};
+			buildConfigurationList = 8C6A5BF81FB62A5D00C9052D /* Build configuration list for PBXProject "Knob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C6A5BF41FB62A5D00C9052D;
+			productRefGroup = 8C6A5BFE1FB62A5D00C9052D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C6A5BFC1FB62A5D00C9052D /* Knob */,
+				8C6A5C0D1FB62A5D00C9052D /* KnobTests */,
+				8C6A5C181FB62A5D00C9052D /* KnobUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C6A5BFB1FB62A5D00C9052D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6A5C051FB62A5D00C9052D /* Assets.xcassets in Resources */,
+				8C6A5C081FB62A5D00C9052D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6A5C0C1FB62A5D00C9052D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6A5C171FB62A5D00C9052D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C6A5BF91FB62A5D00C9052D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6A5C031FB62A5D00C9052D /* ViewController.swift in Sources */,
+				8C6A5C011FB62A5D00C9052D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6A5C0A1FB62A5D00C9052D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6A5C131FB62A5D00C9052D /* KnobTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6A5C151FB62A5D00C9052D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6A5C1E1FB62A5D00C9052D /* KnobUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C6A5C101FB62A5D00C9052D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C6A5BFC1FB62A5D00C9052D /* Knob */;
+			targetProxy = 8C6A5C0F1FB62A5D00C9052D /* PBXContainerItemProxy */;
+		};
+		8C6A5C1B1FB62A5D00C9052D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C6A5BFC1FB62A5D00C9052D /* Knob */;
+			targetProxy = 8C6A5C1A1FB62A5D00C9052D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C6A5C061FB62A5D00C9052D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C6A5C071FB62A5D00C9052D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C6A5C201FB62A5D00C9052D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C6A5C211FB62A5D00C9052D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		8C6A5C231FB62A5D00C9052D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ALFCYUZ64;
+				INFOPLIST_FILE = Knob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krisdigital.Knob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8C6A5C241FB62A5D00C9052D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ALFCYUZ64;
+				INFOPLIST_FILE = Knob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krisdigital.Knob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8C6A5C261FB62A5D00C9052D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ALFCYUZ64;
+				INFOPLIST_FILE = KnobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krisdigital.KnobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knob.app/Contents/MacOS/Knob";
+			};
+			name = Debug;
+		};
+		8C6A5C271FB62A5D00C9052D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ALFCYUZ64;
+				INFOPLIST_FILE = KnobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krisdigital.KnobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knob.app/Contents/MacOS/Knob";
+			};
+			name = Release;
+		};
+		8C6A5C291FB62A5D00C9052D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ALFCYUZ64;
+				INFOPLIST_FILE = KnobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krisdigital.KnobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Knob;
+			};
+			name = Debug;
+		};
+		8C6A5C2A1FB62A5D00C9052D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ALFCYUZ64;
+				INFOPLIST_FILE = KnobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = krisdigital.KnobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Knob;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C6A5BF81FB62A5D00C9052D /* Build configuration list for PBXProject "Knob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6A5C201FB62A5D00C9052D /* Debug */,
+				8C6A5C211FB62A5D00C9052D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C6A5C221FB62A5D00C9052D /* Build configuration list for PBXNativeTarget "Knob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6A5C231FB62A5D00C9052D /* Debug */,
+				8C6A5C241FB62A5D00C9052D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C6A5C251FB62A5D00C9052D /* Build configuration list for PBXNativeTarget "KnobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6A5C261FB62A5D00C9052D /* Debug */,
+				8C6A5C271FB62A5D00C9052D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C6A5C281FB62A5D00C9052D /* Build configuration list for PBXNativeTarget "KnobUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6A5C291FB62A5D00C9052D /* Debug */,
+				8C6A5C2A1FB62A5D00C9052D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C6A5BF51FB62A5D00C9052D /* Project object */;
+}
