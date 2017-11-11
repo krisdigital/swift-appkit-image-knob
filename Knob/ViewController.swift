@@ -14,7 +14,10 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        knob.knobImagePath = "fender_knob.png"
+        if let image = NSImage.init(named: "fender_knob.png") {
+            knob.knobImage = image
+            knob.value = 1
+        }
         // Do any additional setup after loading the view.
     }
 

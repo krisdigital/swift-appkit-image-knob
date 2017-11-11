@@ -7,32 +7,35 @@
 //
 
 import AppKit
+import QuartzCore
+
+func degreesToRad(deg: Float) -> Float {
+    return deg / 180 * .pi;
+}
 
 open class Knob: NSControl {
-    fileprivate var _value: Float = 0.0
-    fileprivate var backgroundImageView: NSImageView = NSImageView()
+    fileprivate var _value: Float = -1.0
     fileprivate var knobImageView: NSImageView = NSImageView()
-    fileprivate var backingKnobImagePath: String?
-    fileprivate var _backgroundImagePath: String?
+    fileprivate var _knobImage: NSImage?
     
     open var value: Float {
         get { return _value }
         set { setValue(newValue, animated: false) }
     }
     
-    open var startAngle: Float = -150
-    open var endAngle: Float = 140
+    open var startAngle: Float = degreesToRad(deg: -150)
+    open var endAngle: Float = degreesToRad(deg: 140)
     open var minimumValue: Float = 0.0
     open var maximumValue: Float = 1.0
     open var turnSpeed: Float = 3000.0
     
-    open var knobImagePath: String {
-        get { return backingKnobImagePath! }
+    open var knobImage: NSImage {
+        get { return _knobImage! }
         set {
-            self.knobImageView.image = NSImage.init(named: newValue)
+            _knobImage = newValue
+            self.knobImageView.image = _knobImage!
         }
     }
-    
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,13 +51,11 @@ open class Knob: NSControl {
     
     func setup() {
         self.wantsLayer = true
-        self.addSubview(self.backgroundImageView)
+        
+        self.knobImageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         self.addSubview(self.knobImageView)
         
-        self.backgroundImageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
-        self.knobImageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         addGestureRecognizer(NSPanGestureRecognizer(target: self, action: #selector(handleGesture(gestureRecognizer:))))
-        setValue(maximumValue, animated: false)
     }
     
     func handleGesture(gestureRecognizer: NSPanGestureRecognizer) {
@@ -66,14 +67,25 @@ open class Knob: NSControl {
         if(value != self.value) {
             _value = min(self.maximumValue, max(self.minimumValue, value))
             
-            let angleRange = endAngle - startAngle
-            let valueRange = maximumValue - minimumValue
-            let angle = min(endAngle, max(startAngle, (value - minimumValue) / valueRange * angleRange + startAngle))
             if let action = self.action {
-             NSApp.sendAction(action, to: self.target, from: self)
+                NSApp.sendAction(action, to: self.target, from: self)
             }
-            self.knobImageView.frameCenterRotation = CGFloat(-angle)
+            
+            DispatchQueue.main.async {
+                self.updateKnob()
+            }
         }
+    }
+    
+    func updateKnob() -> Void {
+        let angleRange = endAngle - startAngle
+        let valueRange = maximumValue - minimumValue
+        let angle = min(endAngle, max(startAngle, (value - minimumValue) / valueRange * angleRange + startAngle))
+        
+        
+        self.knobImageView.layer?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        self.knobImageView.layer?.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
+        self.knobImageView.layer?.transform = CATransform3DMakeRotation(CGFloat(-angle), 0, 0, 1)
     }
     
 }
