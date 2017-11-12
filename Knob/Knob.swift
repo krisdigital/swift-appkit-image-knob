@@ -13,7 +13,7 @@ func degreesToRad(deg: Float) -> Float {
     return deg / 180 * .pi;
 }
 
-open class Knob: NSControl {
+@IBDesignable open class Knob: NSControl {
     fileprivate var _value: Float = -1.0
     fileprivate var knobImageView: NSImageView = NSImageView()
     fileprivate var _knobImage: NSImage?
@@ -29,7 +29,7 @@ open class Knob: NSControl {
     open var maximumValue: Float = 1.0
     open var turnSpeed: Float = 3000.0
     
-    open var knobImage: NSImage {
+    @IBInspectable open var knobImage: NSImage {
         get { return _knobImage! }
         set {
             _knobImage = newValue
@@ -51,12 +51,17 @@ open class Knob: NSControl {
     
     func setup() {
         self.wantsLayer = true
-        
-        self.knobImageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        self.knobImageView.imageScaling = NSImageScaling.scaleProportionallyUpOrDown
         self.addSubview(self.knobImageView)
+        self.knobImageView.translatesAutoresizingMaskIntoConstraints = false
+        self.knobImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        self.knobImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        self.knobImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        self.knobImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
         addGestureRecognizer(NSPanGestureRecognizer(target: self, action: #selector(handleGesture(gestureRecognizer:))))
     }
+    
     
     func handleGesture(gestureRecognizer: NSPanGestureRecognizer) {
         let y: Float = Float(gestureRecognizer.velocity(in: self).y)
